@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChooseActivity"
+    android:background="@drawable/background_style">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="600dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChoose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</ScrollView>
+    <Button
+        android:background="@drawable/button_style"
+        android:id="@+id/buttonComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:textColor="#BEBEBE"/>
+</LinearLayout>

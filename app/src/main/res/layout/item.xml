@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/item_style"
+    >
+
+    <ImageView
+        android:background="@drawable/music"
+
+        android:id="@+id/itemImageView"
+        android:layout_width="72dp"
+        android:layout_height="90dp"
+         />
+<LinearLayout
+    android:id="@+id/linear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/itemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+       android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+
+        android:width="200dp"
+        android:text="TextView"
+        android:textSize="12dp"
+        android:textColor="#BEBEBE"
+       />
+    <TextView
+        android:id="@+id/itemTextViewDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="#BEBEBE"
+
+        android:text="duration"/>
+</LinearLayout>
+
+    <Button
+        android:backgroundTint="#355E3B"
+        android:id="@+id/buttonSend"
+        android:layout_width="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_send_24"
+         />
+
+    <Button
+        android:backgroundTint="#800020"
+        android:id="@+id/buttonDelete"
+        android:layout_width="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+       android:background="@drawable/ic_baseline_delete_24"
+        />
+
+</LinearLayout>
