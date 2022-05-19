@@ -2,8 +2,13 @@ package com.example.mobilprogramlamaodev;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.AudioManager;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -30,10 +35,21 @@ public class SingleSongActivity extends AppCompatActivity {
     Song song;
     MediaPlayer mediaPlayer=MyMediaPlayer.getInstance();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_song);
+
+        IntentFilter intentFilter=new IntentFilter("com.Sensor.stop");
+        BroadcastReciever broadcastReciever=new BroadcastReciever();
+        registerReceiver(broadcastReciever,intentFilter);
+
+        IntentFilter intentFilter1=new IntentFilter("com.Sensor.move");
+        BroadcastReciever broadcastReciever1=new BroadcastReciever();
+        registerReceiver(broadcastReciever1,intentFilter1);
+
+
 
 
         txtSongName=findViewById(R.id.txtViewSongName);

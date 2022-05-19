@@ -142,7 +142,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             File file=new File(path);
             if (file.exists()){
                 file.delete();
-                Toast.makeText(context,"Silindi",Toast.LENGTH_SHORT).show();
+
             }
 
         }
